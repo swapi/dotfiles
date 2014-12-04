@@ -2,3 +2,30 @@ syntax on
 
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
+
+set laststatus=2   " Always show the statusline
+set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
+
+set nobackup " I dont want any backups
+
+set mouse=a
+set tabstop=4
+set shiftwidth=4
+set smarttab
+set expandtab
+set softtabstop=4
+set autoindent
+
+set completeopt=longest,menuone
+
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
+
+map <Leader>n <esc>:tabprevious<CR>
+map <Leader>m <esc>:tabnext<CR>
+vnoremap <Leader>s :sort<CR>
+
+set colorcolumn=80
+highlight ColorColumn ctermbg=233
