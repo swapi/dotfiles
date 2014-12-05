@@ -1,1 +1,2 @@
-export EDITOR='atom'
+export EDITOR='mvim'
+export MARKPATH=$HOME/.marks
