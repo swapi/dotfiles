@@ -1,3 +1,5 @@
+call pathogen#infect()
+
 syntax on
 
 " Wrap gitcommit file types at the appropriate length
@@ -29,3 +31,8 @@ vnoremap <Leader>s :sort<CR>
 
 set colorcolumn=80
 highlight ColorColumn ctermbg=233
+
+set number                      " Show line numbers
+set showmode                    " show the mode all the time
+set noerrorbells                " no error bells please
+set linebreak                   " wrap at 'breakat' instead of last char
